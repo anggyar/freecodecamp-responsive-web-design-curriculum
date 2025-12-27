@@ -1,0 +1,116 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Selection Feature Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <h1>Feature Selection</h1>
+
+    <div class="feature-card-container">
+        <label class="feature-card">
+            <input type="checkbox"/>
+            <h4>50Mbps</h4>
+            <p>High speed</p>
+        </label>
+        
+        <label class="feature-card">
+            <input type="checkbox"/>
+            <h4>1Gbps</h4>
+            <p>Super High speed</p>
+        </label>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.feature-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: left
+}
+
+.bold {
+  font-weight: 800;
+  font-size: large;
+}
+
+.feature-card {
+  /* background-color: lightblue; */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.feature-card-container > * {
+  flex: 1 1 180px;
+}
+
+.feature-card:hover {
+  border-color: #f1be32;
+  box-shadow: 0 4px 12px rgba(255, 201, 53, 0.6);
+}
+
+input[type="checkbox"]{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid #f1be32;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+input[type="checkbox"]:checked {
+  background-color: #f1be32;
+  border-color: #e2a60d;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}
+
+
+
+** end of styles.css **
+
