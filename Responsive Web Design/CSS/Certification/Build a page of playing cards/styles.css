@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background: hsl(200 50% 80%);
+  margin: 1rem;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 400px;
+  background: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px 0px;
+}
+
+.left {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  font-size: 8rem;
+}
+
+.right {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column-reverse;
+}
+
+.reverse {
+  transform: scaleY(-1);
+}
+
+.sekop div {
+  color: hsl(245 70% 30%);
+}
+
+.love div {
+  color: red;
+}
+
+.keriting div {
+  color: black;
+}
+
+.wajik div {
+  color: hsl(10 70% 50%);
+}
