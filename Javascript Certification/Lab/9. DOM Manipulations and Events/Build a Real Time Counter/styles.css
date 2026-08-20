@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;500;700&display=swap");
+
+html {
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: #e8def8;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+textarea {
+  width: 70%;
+  max-height: 130px;
+  max-width: 500px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+p,
+h1 {
+  color: #6338a8;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
